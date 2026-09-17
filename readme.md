@@ -1,38 +1,37 @@
-# House Price Prediction
+# House Price Prediction - Overfitting
 
 ## 1. Giới thiệu
 
-Đây là project Machine Learning sử dụng mô hình
-Linear Regression để dự đoán giá nhà.
+Project sử dụng dữ liệu giá nhà để xây dựng mô hình
+Machine Learning dự đoán giá nhà.
 
-## 2. Mục tiêu
+Project tập trung vào hiện tượng Overfitting và
+cách sử dụng Regularization để giảm Overfitting.
 
-Dự đoán giá bán của một căn nhà dựa trên:
+## 2. Dataset
 
-- OverallQual: chất lượng tổng thể của căn nhà
+Dataset House Prices được lấy từ Kaggle.
+
+File dữ liệu:
+
+- train.csv
+
+Một số thuộc tính được sử dụng:
+
+- OverallQual: chất lượng tổng thể
 - GrLivArea: diện tích sinh hoạt
 - GarageCars: sức chứa gara
-
-Biến cần dự đoán:
-
 - SalePrice: giá bán nhà
 
-## 3. Công nghệ sử dụng
+## 3. Công nghệ
 
 - Python
 - Pandas
 - Scikit-learn
-- Linear Regression
+- Polynomial Regression
+- Ridge Regression
 
-## 4. Dataset
-
-Dataset House Prices được lấy từ Kaggle.
-
-File sử dụng:
-
-train.csv
-
-## 5. Cấu trúc project
+## 4. Cấu trúc project
 
 HousePricePrediction/
 
@@ -42,13 +41,15 @@ HousePricePrediction/
 
 ├── src/
 
-│   └── linear_regression.py
+│   ├── overfitting.py
+
+│   └── solve_overfitting.py
 
 ├── README.md
 
 └── requirements.txt
 
-## 6. Cài đặt
+## 5. Cài đặt
 
 Cài đặt các thư viện:
 
